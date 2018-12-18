@@ -48,11 +48,11 @@ public class SimpleBot extends TelegramLongPollingBot {
         if (message != null && message.hasText()) {
             switch (message.getText()) {
                 case "/start":
-                    sendMsg(message, "");
+                    sendMsg(message, "Назовите город");
                     System.out.println(message.getText());
                     break;
                 case "Команда 1":
-                    sendMsg(message, " На сегодня");
+                    sendMsg(message, "На сегодня");
                     System.out.println(message.getText());
                     break;
                 case "Команда 2":
@@ -84,14 +84,14 @@ public class SimpleBot extends TelegramLongPollingBot {
         // Первая строчка
         KeyboardRow keyboardFirstRow = new KeyboardRow();
         
-        keyboardFirstRow.add("Команда 1");
-        keyboardFirstRow.add("Команда 2");
+        keyboardFirstRow.add("На сейчас");
+        keyboardFirstRow.add("На сегодня");
 
         // Вторая строчка
         KeyboardRow keyboardSecondRow = new KeyboardRow();
         
-        keyboardSecondRow.add("Команда 3");
-        keyboardSecondRow.add("Команда 4");
+        keyboardSecondRow.add("На завтра");
+        keyboardSecondRow.add("На неделю");
 
         
         keyboard.add(keyboardFirstRow);
@@ -110,3 +110,4 @@ public class SimpleBot extends TelegramLongPollingBot {
     }
 
 }
+//https://webdesign.tutsplus.com/ru/tutorials/building-a-weather-app-with-the-darksky-api--cms-28678
