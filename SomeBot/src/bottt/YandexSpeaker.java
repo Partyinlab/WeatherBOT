@@ -1,4 +1,4 @@
-package bottt;
+/*package bottt;
 import java.net.URL;
 import java.net.HttpURLConnection;
 
@@ -21,4 +21,4 @@ public class YandexSpeaker {
 
 	System.out.println(response.toString());
 
-}
+} */
